@@ -1,46 +1,27 @@
-import Head from "next/head";
-import Navigation from "./Navigation";
+import Head from 'next/head';
+import Navigation from './Navigation';
+import { Footer } from '../components/navigation/footer/Footer';
+import { Header } from '../components/navigation/header/Header';
 
 type Props = {
   children: React.ReactNode;
 };
 export default function Layout({ children }: Props) {
   return (
-    <div className="root">
+    <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="apple-touch-icon" href="/icon.png" />
-        <meta name="theme-color" content="#fff" />
+        <title>ALTRO</title>
+        <meta name="description" content="ALTRO is an open source tool for robotics..." />
+        <link
+          rel="icon"
+          href="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Robotics_Institute_logo.svg/1200px-Robotics_Institute_logo.svg.png"
+        />
       </Head>
-      <nav>
-        <Navigation />
-      </nav>
-      <main>{children}</main>
-      <style jsx>
-        {`
-          .root {
-            display: block;
-            padding: 4rem 0;
-            box-sizing: border-box;
-            height: 100%;
-          }
-          main {
-            display: flex;
-            min-height: 100%;
-          }
-          @media (min-width: 769px) {
-            .root {
-              display: flex;
-              flex: 1 0 auto;
-            }
-            main {
-              flex: 1 0 auto;
-            }
-          }
-        `}
-      </style>
-    </div>
+
+      <main className="w-[100%] flex flex-col items-center">
+        <Header stickyHeader={true} />
+        {children}
+      </main>
+    </>
   );
 }

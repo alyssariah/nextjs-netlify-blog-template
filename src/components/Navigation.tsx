@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Burger from "./Burger";
-import { useState } from "react";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import Burger from './Burger';
+import { useState } from 'react';
 
 export default function Navigation() {
   const router = useRouter();
@@ -9,22 +9,16 @@ export default function Navigation() {
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={"container " + (active ? "active" : "")}>
+      <div className={'container ' + (active ? 'active' : '')}>
         <ul>
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" ? "active" : null}>about</a>
+              <a className={router.pathname === '/' ? 'active' : null}>about</a>
             </Link>
           </li>
           <li>
-            <Link href="/posts">
-              <a
-                className={
-                  router.pathname.startsWith("/posts") ? "active" : null
-                }
-              >
-                blog
-              </a>
+            <Link href="/docs">
+              <a className={router.pathname.startsWith('/docs') ? 'active' : null}>blog</a>
             </Link>
           </li>
         </ul>

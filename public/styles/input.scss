@@ -1,0 +1,26 @@
+@import './reset.scss';
+@import './box-shadows/box-shadow.scss';
+@import './colors/colors.scss';
+@import './typography/typography.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Hind', sans-serif;
+  background-color: var(--grey-900);
+  color: var(--grey-100);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
