@@ -6,15 +6,12 @@ import matter from 'gray-matter';
 import { fetchDocContent } from '../../lib/docs';
 import fs from 'fs';
 import yaml from 'js-yaml';
-import { parseISO } from 'date-fns';
-import DocLayout from '../../components/DocLayout';
 
 import InstagramEmbed from 'react-instagram-embed';
 import YouTube from 'react-youtube';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
 import Layout from '../../components/Layout';
-import { countDocs, listDocContent, DocContent } from '../../lib/docs';
-import { jsonLdScriptProps } from 'react-schemaorg';
+import { listDocContent, DocContent } from '../../lib/docs';
 import Link from 'next/link';
 import clsx from 'clsx';
 

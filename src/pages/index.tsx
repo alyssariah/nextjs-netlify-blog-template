@@ -5,7 +5,6 @@ import animationData from '../../public/wave.json';
 import Lottie from 'react-lottie';
 import { BasicButton } from '../components/data-display/button/basic-button/BasicButton';
 import { BsSpeedometer2 } from 'react-icons/bs';
-import Image from 'next/image';
 
 export default function Home() {
   const defaultOptions = {
@@ -151,7 +150,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-16 lg:mt-0 w-[320px] h-[200px] sm:w-[480px] sm:h-[280px] md:w-[589px] md:h-[314px] relative">
-            <Image src="/graph.png" alt="line graph" layout="fill" />
+            <img src="/graph.png" alt="line graph" className="w-[100%] h-[100%]" />
           </div>
         </div>
         <div className="w-[100%] max-w-[1440px] flex flex-col items-center justify-center px-8 py-16">
@@ -161,7 +160,11 @@ export default function Home() {
               return (
                 <div className="w-[100%] lg:w-[30%] flex flex-col items-center my-12" key={i}>
                   <div className="rounded-full overflow-hidden w-[134px] h-[134px] relative">
-                    <Image src={contributor.profile} alt="profile headshot" layout="fill" />
+                    <img
+                      src={contributor.profile}
+                      alt="profile headshot"
+                      className="w-[100%] h-[100%]"
+                    />
                   </div>
                   <p className="text-body-lg font-bold text-grey-50 font-heading mt-4">
                     {contributor.name}

@@ -1,13 +1,12 @@
 import { GetStaticProps } from 'next';
 import Layout from '../../components/Layout';
-import BasicMeta from '../../components/meta/BasicMeta';
-import OpenGraphMeta from '../../components/meta/OpenGraphMeta';
-import TwitterCardMeta from '../../components/meta/TwitterCardMeta';
-import DocList from '../../components/DocList';
+// import BasicMeta from '../../components/meta/BasicMeta';
+// import OpenGraphMeta from '../../components/meta/OpenGraphMeta';
+// import TwitterCardMeta from '../../components/meta/TwitterCardMeta';
+// import DocList from '../../components/DocList';
 import config from '../../lib/config';
 import { countDocs, listDocContent, DocContent } from '../../lib/docs';
 import { listTags, TagContent } from '../../lib/tags';
-import Link from 'next/link';
 
 type Props = {
   docs: DocContent[];
