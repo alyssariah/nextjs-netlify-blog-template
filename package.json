@@ -8,8 +8,6 @@
     "start": "next start",
     "export": "next build && next export -o ./dist",
     "test": "jest",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "tailwind": "npx tailwindcss -i ./public/styles/input.scss -o ./public/styles/global.scss --watch"
   },
