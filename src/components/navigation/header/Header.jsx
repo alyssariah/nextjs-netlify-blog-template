@@ -7,7 +7,6 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import clsx from 'clsx';
-import Image from 'next/image';
 
 export const Header = ({ links, stickyHeader }) => {
   const router = useRouter();
@@ -55,7 +54,7 @@ export const Header = ({ links, stickyHeader }) => {
             </ul>
           </div>
           <div className="flex justify-end w-[60px] lg:w-[162px]">
-            <Image src="/robotic-logo.svg" alt="robotic logo" width="50px" height="40px" />
+            <img src="/robotic-logo.svg" alt="robotic logo" width="50px" height="40px" />
           </div>
         </div>
       </header>

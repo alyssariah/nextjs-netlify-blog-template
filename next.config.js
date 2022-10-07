@@ -1,11 +1,5 @@
 module.exports = {
   pageExtensions: ['tsx'],
-  reactStrictMode: true,
-  swcMinify: true,
-  i18n: {
-    locales: ['en'],
-    defaultLocale: 'en',
-  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push(
       ...[

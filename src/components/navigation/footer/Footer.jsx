@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { BasicButton } from '../../data-display/button/basic-button/BasicButton';
 
 export const Footer = () => {
@@ -10,7 +9,7 @@ export const Footer = () => {
         <div className="flex justify-between lg:items-center flex-col lg:flex-row text-surface--variant space-y-4 lg:space-x-20 lg:space-y-0">
           <div className="flex-grow">
             <div className="flex space-x-2">
-              <Image src="/robotic-logo.svg" alt="Robotics Logo" width="40px" height="40px" />
+              <img src="/robotic-logo.svg" alt="Robotics Logo" width="40px" height="40px" />
               <a href="/" className="text-heading-sm text-red-400 font-logo">
                 ALTRO
               </a>
